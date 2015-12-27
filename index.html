@@ -12,26 +12,26 @@
 	</div>
 
 	<template id="plan-template">
-			<div>
-				<span class="Plan__name">
-					{{plan.name}}
-				</span>
+		<div>
+			<span class="Plan__name">
+				{{plan.name}}
+			</span>
 
-				<span class="Plan__price">
-					{{plan.price}}/month
-				</span>
+			<span class="Plan__price">
+				{{plan.price}}/month
+			</span>
 
-				<button v-show="plan.name !== active.name" 
-						@click="activePlan"
-				>
-					{{ isUpgrade ? "Upgrade" : "Downgrade" }}
-				</button>
+			<button v-show="plan.name !== active.name" 
+					@click="activePlan"
+			>
+				{{ isUpgrade ? "Upgrade" : "Downgrade" }}
+			</button>
 
-				<span v-else>
-					Current
-				</span>
-			</div>
-		</template>
+			<span v-else>
+				Current
+			</span>
+		</div>
+	</template>
 	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.13/vue.js"></script>
 
 	<script>
